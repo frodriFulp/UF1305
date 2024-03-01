@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimimi</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div>
+        <h3>Ejercicios 1</h3>
+        <pre>Posible resolución al algoritmo solicitado
+            PSEUDOCÓDIGO
+            Leer texto
+            Dividir texto por palabras
+            Guardar palabras
+            Leer palabra por palabra
+                Repetir para cada palabra
+                    Dividir palabra por letras
+                    Guardar letras
+                    Repetir para cada letra de la palabra
+                        Leer letra a letra
+                        Si letra es igual a vocal
+                            Si letra distinta de i
+                                Cambiar vocal por i
+                            Sino dejar vocal.
+                        Sino mantener caracter en palabra
+                        Guardar caracter
+                    Guardar palabra modificada.
+                Guardar texto modificado
+            Devolver texto modificado.
+            </pre>
+    </div>
+    <div>
+        <h3>Ejercicio 2</h3>
+        <img src="img/ordinograma.gif" alt="ordinograma">
+        <p>Función que devuelve cual es el mayor de dos números.</p>
+    </div>
+    <h3>Ejercicio 3</h3>
+    <div class="base">
+        <textarea name="textintrod" id="textintrod" cols="30" rows="10"></textarea>
+        <button onclick="mimimi()" id="traductor"> Traducir </button>
+        <textarea name="texttrad" id="texttrad" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <h3>
+            Ejercicio 4
+        </h3>
+        <pre>
+            // Las siguientes variables se definen en el ámbito global
+            var num1 = 20,
+            num2 = 3,
+            name = "Chamahk";
+
+            // Esta función está definida en el ámbito global, devuelve el producto de num1 y num 2
+            function multiply() {
+                return num1 * num2;
+            }
+            multiply(); // Devuelve 60
+
+            // Un ejemplo de función anidada que devuelve el resultado de add() dentro de getScore().
+            function getScore() {
+                var num1 = 2,
+                num2 = 3;
+                // Función que devuelve un string donde se suma num1 y num 2
+                function add() {
+                    return name + " anotó " + (num1 + num2);
+                }
+            return add();
+            }
+
+            getScore(); // Devuelve "Chamahk anotó 5"
+</pre>
+    </div>
+    <div>
+        <h3>Ejercicio 5</h3>
+        <input class="palabras" type="text" name="str1" id="str1">
+        <input class="palabras" type="text" name="str2" id="str2">
+        <button onclick="palabraLarga(document.querySelector('#str1').value, document.querySelector('#str2').value).value"> Palabra Larga</button>
+        <p id="palabralarga"></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
